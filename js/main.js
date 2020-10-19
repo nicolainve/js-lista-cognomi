@@ -8,6 +8,13 @@ while (userSurname.length == 0) {
 
 surnameList.push(userSurname);
 
-console.log(surnameList.sort());
+surnameList.sort();
 
-console.log(surnameList.indexOf(userSurname) + 1);
+
+var surnames = '';
+
+for (var i = 0; i < surnameList.length; i++) {
+    surnames += '<li>' + surnameList[i] + '</li>';
+}
+
+document.getElementById('surnames').innerHTML = surnames;
