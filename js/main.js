@@ -18,3 +18,5 @@ for (var i = 0; i < surnameList.length; i++) {
 }
 
 document.getElementById('surnames').innerHTML = surnames;
+
+document.getElementById('index').innerHTML = surnameList.indexOf(userSurname) + 1;
